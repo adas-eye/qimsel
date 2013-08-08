@@ -11,3 +11,9 @@
 *.lai
 *.la
 *.a
+
+# Qt
+*.pro.user
+moc_*
+ui_*
+Makefile
