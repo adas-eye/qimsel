@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>qimsel</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMinAndMaxSize</enum>
+   </property>
+   <item row="0" column="0">
+    <widget class="ThumbWidget" name="listWidget">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::AnyKeyPressed</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ContiguousSelection</enum>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="resizeMode">
+      <enum>QListView::Adjust</enum>
+     </property>
+     <property name="layoutMode">
+      <enum>QListView::Batched</enum>
+     </property>
+     <property name="gridSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::IconMode</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ThumbWidget</class>
+   <extends>QListWidget</extends>
+   <header location="global">thumbwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
