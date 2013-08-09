@@ -114,4 +114,6 @@ void ThumbWidget::fill()
          i != images.end(); ++i)
         new QListWidgetItem(QIcon((*i).absoluteFilePath()),
                             (*i).fileName(), this);
+
+    setCurrentRow(0);
 }
