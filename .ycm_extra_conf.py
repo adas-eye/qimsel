@@ -5,6 +5,7 @@ flags = [
 '-x', 'c++',
 '-std=c++11',
 '-isystem', '/usr/lib/c++/v1',
+'-I', '/usr/include/qt/',
 '-I', '/usr/include/qt/QtCore/',
 '-I', '/usr/include/qt/QtGui/',
 '-I', '/usr/include/qt/QtWidgets/',
@@ -12,6 +13,7 @@ flags = [
 '-Wall',
 '-Wextra',
 '-pedantic',
+'-DUSE_CLANG_COMPLETER'
 ]
 
 def DirectoryOfThisScript():
