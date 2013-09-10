@@ -5,20 +5,22 @@
 
 class Dir : public QObject
 {
-    Q_OBJECT
+	Q_OBJECT
 public:
-    explicit Dir(const QString &path);
-    virtual ~Dir();
+	explicit Dir(const QString &path);
+	virtual ~Dir();
 
-    const QDir &qDir() const;
-    bool cd(const QString &dirName);
-    bool cdUp();
+	const QDir &qDir() const;
+	bool cd(const QString &dirName);
+	bool cdUp();
 
 private:
-    QDir dir;
+	QDir dir;
 
 signals:
-    void dirChanged();
+	void dirChanged();
 };
 
 #endif // DIR_H
+
+/* vim: set ts=4 sw=4 noet: */

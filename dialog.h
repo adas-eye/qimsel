@@ -11,11 +11,13 @@ class Dialog : public QDialog
 {
 	Q_OBJECT
 public:
-    explicit Dialog(QWidget *parent = 0);
-    virtual ~Dialog();
+	explicit Dialog(QWidget *parent = 0);
+	virtual ~Dialog();
 
 private:
-    Ui::Dialog *ui;
+	Ui::Dialog *ui;
 };
 
 #endif // DIALOG_H
+
+/* vim: set ts=4 sw=4 noet: */
