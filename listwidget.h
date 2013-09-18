@@ -25,4 +25,4 @@ protected slots:
 
 #endif // LISTWIDGET_H
 
-/* vim: set ts=4 sw=4 noet: */
+// vim: set ts=4 sw=4 noet:

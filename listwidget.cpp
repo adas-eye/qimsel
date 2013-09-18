@@ -8,7 +8,6 @@ const int ListWidget::ZoomStep = 16;
 ListWidget::ListWidget(QWidget *parent) :
 	QListWidget(parent)
 {
-	this->setViewMode(QListWidget::IconMode);
 	connect(this, SIGNAL(itemActivated(QListWidgetItem *)),
 			&thumbDir, SLOT(followItem(QListWidgetItem *)));
 	connect(&thumbDir, SIGNAL(dirChanged(QList<QListWidgetItem *>)),

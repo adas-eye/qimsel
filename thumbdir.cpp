@@ -86,8 +86,10 @@ void ThumbDir::completeRequest(unsigned int handle, QStringList URIs)
 		return;
 
 	foreach(QString f, URIs) {
-		QString fileName = QCryptographicHash::hash(f.toUtf8(), QCryptographicHash::Md5).toHex();
-		QString path = QDir::homePath() + QDir::separator() +
+		QString fileName =
+			QCryptographicHash::hash(f.toUtf8(), QCryptographicHash::Md5).toHex();
+		QString path =
+			QDir::homePath() + QDir::separator() +
 			".thumbnails" + QDir::separator() +
 			"normal" + QDir::separator() +
 			fileName + ".png";
