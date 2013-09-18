@@ -16,7 +16,7 @@
     <enum>QLayout::SetMinAndMaxSize</enum>
    </property>
    <item row="0" column="0">
-    <widget class="ThumbWidget" name="listWidget">
+    <widget class="ListWidget" name="listWidget">
      <property name="focusPolicy">
       <enum>Qt::StrongFocus</enum>
      </property>
@@ -54,9 +54,9 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>ThumbWidget</class>
+   <class>ListWidget</class>
    <extends>QListWidget</extends>
-   <header location="global">thumbwidget.h</header>
+   <header location="global">listwidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

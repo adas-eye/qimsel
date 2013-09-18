@@ -1,12 +1,14 @@
-#include "dialog.h"
 #include <QApplication>
+
+#include "dialog.h"
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
-	Dialog w;
-	w.show();
+	Dialog d;
+	d.show();
+
 	return a.exec();
 }
 
-/* vim: set ts=4 sw=4 noet: */
+// vim: set ts=4 sw=4 noet:

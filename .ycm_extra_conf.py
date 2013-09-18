@@ -7,6 +7,7 @@ flags = [
 '-isystem', '/usr/lib/c++/v1',
 '-I', '/usr/include/qt/',
 '-I', '/usr/include/qt/QtCore/',
+'-I', '/usr/include/qt/QtDBus',
 '-I', '/usr/include/qt/QtGui/',
 '-I', '/usr/include/qt/QtWidgets/',
 '-I', '/usr/include/qt/QtDesigner/',

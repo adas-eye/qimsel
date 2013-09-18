@@ -1,24 +1,17 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2013-08-05T16:39:36
-#
-#-------------------------------------------------
-
-QT       += core gui
+QT+=core gui dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = qimsel
-TEMPLATE = app
+TARGET=qimsel
+TEMPLATE=app
 
+SOURCES+=main.cpp\
+         dialog.cpp\
+         listwidget.cpp\
+         thumbdir.cpp
 
-SOURCES += main.cpp\
-        dialog.cpp \
-    dir.cpp \
-    thumbwidget.cpp
+HEADERS+=thumbdir.h\
+         dialog.h\
+         listwidget.h
 
-HEADERS  += dialog.h \
-    dir.h \
-    thumbwidget.h
-
-FORMS    += dialog.ui
+FORMS+=dialog.ui
